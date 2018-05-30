@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 });
 
-app.get('/receive', (req, res)=>{
+app.get('/webhook', (req, res)=>{
   console.log(req.query.fromuid);
   var date = new Date();
   ZOAClient.api('sendmessage/text', 'POST', {
@@ -32,7 +32,7 @@ app.get('/receive', (req, res)=>{
   res.send('receive method');
 })
 
-var listener = app.listen(process.env.PORT || 3000, () => {
+var listener = app.listen(process.env.PORT || 3000, process.env.address, () => {
   console.log("Server listening at: " + listener.address().address + ":" + listener.address().port)
 });
 
