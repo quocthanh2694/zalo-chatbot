@@ -32,7 +32,7 @@ var zaConfig = {
 - Deploy to server: you can choose any server to deploy your nodejs project.
 - After deployed you will have `ip address` or `link` and put to `[Link address you deployed]/webhook` in **Step 2**.
 
-## Enjoy.
+## Enjoy by chat with bot on zalo app.
 
 ## Reference: [Zalo For Developer](developers.zalo.me)
 
